@@ -1,0 +1,89 @@
+@import '../abstracts/variables';
+
+@import '../base/animations';
+
+.header{
+    position: relative;
+    height: 95vh;
+    &__slide--1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(314deg, rgba($primary,0.5), rgba($secondary,0.5)), url($header-bg-1);
+        background-size: cover;
+        background-position: center;
+        animation: fade-1 12s infinite;
+    }
+
+    &__slide--2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(314deg, rgba($primary,0.5), rgba($secondary,0.5)), url($header-bg-2);
+        background-size: cover;
+        background-position: center;
+        animation: fade-2 12s infinite;
+    }
+
+    &__slide--3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(314deg, rgba($primary,0.5), rgba($secondary,0.5)), url($header-bg-3);
+        background-size: cover;
+        background-position: center;
+        animation: fade-3 12s infinite;
+    }
+
+    &__slide--4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(314deg, rgba($primary,0.5), rgba($secondary,0.5)), url($header-bg-4);
+        background-size: cover;
+        background-position: center;
+        animation: fade-4 12s infinite;
+    }
+    &__content{
+        position: absolute;
+        bottom: 20%;
+        left: 5%;
+    }
+    &__logo{
+
+        &--img{
+            width: 500px;
+            text-shadow: 2px 2px 4px white;
+        }
+    }
+    &__text{
+        margin-left: 50px;
+        color: white;
+        &--title{
+            // text-transform: uppercase;
+            font-size: 4.5rem;
+            font-weight: 900;
+            letter-spacing: 0.2rem;
+            // font-style:oblique;
+        }
+        &--sub{
+            font-size: 1.5rem;
+            font-style: oblique;
+            font-weight: 200;
+        }
+    }
+
+    &__buttons{
+        padding-left: 40px;
+        margin-top: 25px;
+    }
+
+}
